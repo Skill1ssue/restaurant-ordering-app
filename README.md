@@ -6,3 +6,8 @@ This repository contains the solo project "Restaurant Ordering App" from Scrimba
 - Render the menu options using JavaScript
 - Be able to add/remove items
 - Have a payment modal with compulsory (require inputs to submit) form inputs
+
+# Stretch Goals
+- Change th theme
+- Offer a "meal deal" discount
+- Allow users to rate their experience with stars
