@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <!-- ------------------------------------------------------ -->
+    <title>Restaurant Ordering App</title>
+    <link href="styles.css" rel="stylesheet" />
+    <script type="module" src="/scripts.js"></script>
+</head>
+
+<body>
+    <!-- Banner and page name -->
+    <header>
+        <!-- <span class="discount"><strong>15% total off</strong> ordering Beer and Hamburger together</span> -->
+        <h1>Jimmy's Diner</h1>
+        <p>The best burgers and pizzas in town</p>
+    </header>
+    <main>
+
+        <!-- Products -->
+        <section class="products">
+            <!-- product will be show here -->
+        </section>
+
+        <!-- Order details -->
+
+        <section class="order hidden" id="order">
+            <h2>Your order</h2>
+            <div class="order-items"></div>
+            <div class="order-item">
+                <span class="item-name">Discount</span>
+                <span class="product-price" id="discount">0%</span>
+            </div>
+            <div class="total">
+                <h4>Total Price:</h4>
+                <span class="product-price" id="total-price">$0</span>
+            </div>
+            <button class="complete-order" id="complete-order">Complete order</button>
+        </section>
+        <div class="rating hidden">
+            <div class="card">
+                <h2>Rate our service</h2>
+                <br />
+                <span id="star1" class="star">★</span>
+                <span id="star2" class="star">★</span>
+                <span id="star3" class="star">★</span>
+                <span id="star4" class="star">★</span>
+                <span id="star5" class="star">★</span>
+                <h3 id="output">
+                    Rating is: 0/5
+                </h3>
+            </div>
+        </div>
+    </main>
+
+    <!-- Payment Form -->
+
+    <footer class="form-modal hidden" id="form-modal">
+        <h2>Enter Card details</h2>
+        <form>
+            <input id="name-input" required type="text" name="name" aria-label="name" placeholder="Enter your name">
+            <input required type="number" name="card-number" aria-label="card number" placeholder="Enter card number">
+            <input required type="number" name="cvv" aria-label="cvv" placeholder="Enter CVV">
+            <button class="complete-order" id="pay">Pay</button>
+        </form>
+    </footer>
+</body>
+
+</html>
