@@ -34,7 +34,7 @@ const itemsHtml = menuArray.map(product => {
             <span class="product-img">${product.emoji}</span>
             <div class="product-description">
                 <h3>${product.name}</h3>
-                <p>${product.ingredients}</p>
+                <p>${product.ingredients.join(', ')}</p>
                 <span class="product-price">$${product.price}</span>
             </div>
         </div>

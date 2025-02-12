@@ -112,6 +112,14 @@ article {
     justify-content: center;
 }
 
+/* Fix width for ingredients in small screen devices */
+@media screen and (max-width: 350px) {
+    .product-description {
+        max-width: 100px;
+    }
+    
+}
+
 .product-description h3 {
     font-size: 28px;
     font-weight: normal;
